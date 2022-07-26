@@ -1,15 +1,15 @@
 import 'dart:convert';
 import 'dart:io';
 
-import 'package:bloc_study/block/bloc_action.dart';
+import 'package:bloc_study/screens/second_screen/block/bloc_action.dart';
+import 'package:bloc_study/screens/second_screen/block/person.dart';
+import 'package:bloc_study/screens/second_screen/block/persons_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../block/person.dart';
 
 import 'dart:developer' as devtools show log;
 
-import '../block/persons_bloc.dart';
 extension Log on Object {
   void log() => devtools.log(toString());
 }

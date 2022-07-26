@@ -1,9 +1,8 @@
 import 'package:bloc_study/screens/first_screen.dart';
-import 'package:bloc_study/screens/second_screen.dart';
+import 'package:bloc_study/screens/second_screen/second_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
-import 'block/persons_bloc.dart';
+import 'screens/second_screen/block/persons_bloc.dart';
 
 void main() {
   runApp(const MyApp());

@@ -1,8 +1,8 @@
-import 'package:bloc_study/block/bloc_action.dart';
-import 'package:bloc_study/block/persons_bloc.dart';
+import 'package:bloc_study/screens/second_screen/block/bloc_action.dart';
+import 'package:bloc_study/screens/second_screen/block/persons_bloc.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:bloc_test/bloc_test.dart';
-import 'package:bloc_study/block/person.dart';
+import 'package:bloc_study/screens/second_screen/block/person.dart';
 
 const mockedPersons1  = [
   Person(

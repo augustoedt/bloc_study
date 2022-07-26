@@ -1,6 +1,6 @@
 
 import 'package:bloc/bloc.dart';
-import 'package:bloc_study/block/person.dart';
+import 'package:bloc_study/screens/second_screen/block/person.dart';
 import 'package:flutter/foundation.dart' show immutable;
 
 import 'bloc_action.dart';

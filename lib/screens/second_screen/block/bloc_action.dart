@@ -1,4 +1,4 @@
-import 'package:bloc_study/block/person.dart';
+import 'package:bloc_study/screens/second_screen/block/person.dart';
 import 'package:flutter/foundation.dart' show immutable;
 
 typedef PersonsLoader = Future<Iterable<Person>> Function(String url);
