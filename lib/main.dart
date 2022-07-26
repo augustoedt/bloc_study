@@ -3,6 +3,8 @@ import 'package:bloc_study/screens/second_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import 'block/persons_bloc.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -10,6 +12,7 @@ void main() {
 const allRoutes = <String, String>{
   MainPage.namePath: "Home",
   FirstScreen.namePath: "Example 1",
+  SecondScreen.namePath: "Example 2"
 };
 
 
