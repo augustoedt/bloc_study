@@ -27,7 +27,7 @@ extension Subscript<T> on Iterable<T> {
 }
 
 class SecondScreen extends StatefulWidget {
-  static const namePath = "/second_example";
+  static const namePath = "/secondExample";
 
   const SecondScreen({Key? key}) : super(key: key);
 

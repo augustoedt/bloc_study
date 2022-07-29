@@ -15,7 +15,7 @@ class NamesCubit extends Cubit<String?>{
 }
 
 class FirstScreen extends StatefulWidget {
-  static const namePath = "/first_example";
+  static const namePath = "/firstExample";
 
   const FirstScreen({Key? key}) : super(key: key);
 

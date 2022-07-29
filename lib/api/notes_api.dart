@@ -13,9 +13,11 @@ abstract class NotesApiProtocol {
 
 @immutable
 class NotesApi implements NotesApiProtocol{
+
+
   @override
   Future<Iterable<Note>?> getNotes({required LoginHandle loginHandle}) =>
-      Future.delayed(const Duration(seconds: 2),
+      Future.delayed(const Duration(seconds: 1),
             ()=>loginHandle == const LoginHandle.fooBar() ? mockNotes : null,
       );
 }

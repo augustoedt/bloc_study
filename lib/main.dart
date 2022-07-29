@@ -1,4 +1,5 @@
 import 'package:bloc_study/screens/first_screen.dart';
+import 'package:bloc_study/screens/notes_app_screens/notes_app.dart';
 import 'package:bloc_study/screens/second_screen/second_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -11,7 +12,8 @@ void main() {
 const allRoutes = <String, String>{
   MainPage.namePath: "Home",
   FirstScreen.namePath: "Example 1",
-  SecondScreen.namePath: "Example 2"
+  SecondScreen.namePath: "Example 2",
+  NotesApp.namePath: "Notes App"
 };
 
 
@@ -33,6 +35,7 @@ class MyApp extends StatelessWidget {
             create: (_)=>PersonsBloc(),
             child: const SecondScreen(),
           ),
+          NotesApp.namePath: (context)=>const NotesApp(),
         }
     );
   }

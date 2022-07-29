@@ -46,17 +46,20 @@ class AppBloc extends Bloc<AppAction,AppState>{
         if(loginHandle != const LoginHandle.fooBar()) {
           emit(
             AppState(
-                isLoading: true,
+                isLoading: false,
                 loginErrors: LoginErrors.invalidHandle,
                 loginHandle: loginHandle,
                 fetchedNotes: null
-            ),);
+            ),
+          );
           return;
         }
-        final notes = await notesApi.getNotes(loginHandle: loginHandle!);
+        final notes = await notesApi.getNotes(
+            loginHandle: loginHandle!
+        );
         emit(
             AppState(
-                isLoading: true,
+                isLoading: false,
                 loginErrors: null,
                 loginHandle: loginHandle,
                 fetchedNotes: notes
