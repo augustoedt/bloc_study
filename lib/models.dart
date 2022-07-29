@@ -2,7 +2,7 @@ import 'package:flutter/foundation.dart' show immutable;
 
 @immutable
 class LoginHandle {
-  final String  token;
+  final String token;
 
   const LoginHandle({
     required this.token
@@ -33,4 +33,9 @@ class Note {
   String toString() => 'Note (title = $title)';
 }
 
+enum LoginErrors {
+  invalidHandle,
+}
+
 final mockNotes = Iterable.generate(3, (i)=>Note(title: 'Note ${i+1}'));
+
