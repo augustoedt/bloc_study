@@ -6,7 +6,7 @@ app = FastAPI()
 async def root():
     return {"message": "Hello World"}
 
-@app.get("/persons1")
+@app.get("/api/persons1")
 async def root():
     return [
         {
@@ -23,7 +23,7 @@ async def root():
         },
     ]
 
-@app.get("/persons2")
+@app.get("/api/persons2")
 async def root():
     return [
         {
@@ -39,3 +39,4 @@ async def root():
             "age": 24
         },
     ]
+

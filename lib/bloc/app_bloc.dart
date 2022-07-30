@@ -8,12 +8,13 @@ import 'package:bloc_study/models.dart';
 class AppBloc extends Bloc<AppAction,AppState>{
   final LoginApiProtocol loginApi;
   final NotesApiProtocol notesApi;
-
+  final LoginHandle acceptedLoginHandle;
   AppBloc({
     required this.loginApi,
-    required this.notesApi
+    required this.notesApi,
+    required this.acceptedLoginHandle
   }) : super(const AppState.empty()){
-    on<LoginAction>((event, emit)  async {
+    on<LoginAction>((event, emit) async {
       emit(const AppState(
           isLoading: true,
           loginErrors: null,
@@ -43,14 +44,13 @@ class AppBloc extends Bloc<AppAction,AppState>{
         ));
 
         final loginHandle = state.loginHandle;
-        if(loginHandle != const LoginHandle.fooBar()) {
+        if(acceptedLoginHandle != loginHandle) {
           emit(
             AppState(
                 isLoading: false,
                 loginErrors: LoginErrors.invalidHandle,
                 loginHandle: loginHandle,
-                fetchedNotes: null
-            ),
+                fetchedNotes: null),
           );
           return;
         }

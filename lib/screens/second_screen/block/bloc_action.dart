@@ -22,5 +22,5 @@ enum PersonUrl {
   person1,
   person2
 }
-const persons1Url = "http://localhost:8000/persons1";
-const persons2Url = "http://localhost:8000/persons2";
+const persons1Url = "http://localhost:8000/api/persons1";
+const persons2Url = "http://localhost:8000/api/persons2";
