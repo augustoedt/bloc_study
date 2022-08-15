@@ -1,16 +1,16 @@
 import 'package:bloc_study/api/login_api.dart';
 import 'package:bloc_study/api/notes_api.dart';
-import 'package:bloc_study/bloc/actions.dart';
-import 'package:bloc_study/bloc/app_bloc.dart';
-import 'package:bloc_study/bloc/app_states.dart';
-import 'package:bloc_study/components/interable_list_view.dart';
+import 'package:bloc_study/screens/notes_app_screens/bloc/actions.dart';
+import 'package:bloc_study/screens/notes_app_screens/bloc/app_bloc.dart';
+import 'package:bloc_study/screens/notes_app_screens/bloc/app_states.dart';
+import 'package:bloc_study/screens/notes_app_screens/components/iterable_list_view.dart';
 import 'package:bloc_study/dialog/generic_dialog.dart';
 import 'package:bloc_study/dialog/loadind_screen.dart';
-import 'package:bloc_study/models.dart';
+import 'package:bloc_study/screens/notes_app_screens/models.dart';
 import 'package:bloc_study/screens/notes_app_screens/login_view.dart';
-import 'package:bloc_study/utils/strings.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:bloc_study/screens/notes_app_screens/utils/strings.dart';
 
 class NotesApp extends StatelessWidget {
   static const String namePath = '/notesApp';

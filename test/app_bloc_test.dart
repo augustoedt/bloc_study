@@ -1,9 +1,9 @@
 import 'package:bloc_study/api/login_api.dart';
 import 'package:bloc_study/api/notes_api.dart';
-import 'package:bloc_study/bloc/actions.dart';
-import 'package:bloc_study/bloc/app_bloc.dart';
-import 'package:bloc_study/bloc/app_states.dart';
-import 'package:bloc_study/models.dart';
+import 'package:bloc_study/screens/notes_app_screens/bloc/actions.dart';
+import 'package:bloc_study/screens/notes_app_screens/bloc/app_bloc.dart';
+import 'package:bloc_study/screens/notes_app_screens/bloc/app_states.dart';
+import 'package:bloc_study/screens/notes_app_screens/models.dart';
 import 'package:bloc_test/bloc_test.dart';
 import 'package:flutter/foundation.dart' show immutable;
 import 'package:flutter_test/flutter_test.dart';

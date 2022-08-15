@@ -1,4 +1,5 @@
 import 'package:bloc_study/screens/first_screen.dart';
+import 'package:bloc_study/screens/multibloc_provider_screen/multibloc_provider_screen.dart';
 import 'package:bloc_study/screens/notes_app_screens/notes_app.dart';
 import 'package:bloc_study/screens/second_screen/second_screen.dart';
 import 'package:flutter/material.dart';
@@ -13,7 +14,8 @@ const allRoutes = <String, String>{
   MainPage.namePath: "Home",
   FirstScreen.namePath: "Example 1",
   SecondScreen.namePath: "Example 2",
-  NotesApp.namePath: "Notes App"
+  NotesApp.namePath: "Notes App",
+  MultiBlocProviderScreen.namePath: "MultiBloc Provider App"
 };
 
 
@@ -25,8 +27,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+        primarySwatch: Colors.blue),
         initialRoute: "/",
         routes: {
           MainPage.namePath: (context)=>const MainPage(),
@@ -36,6 +37,7 @@ class MyApp extends StatelessWidget {
             child: const SecondScreen(),
           ),
           NotesApp.namePath: (context)=>const NotesApp(),
+          MultiBlocProviderScreen.namePath: (context)=>const MultiBlocProviderScreen(),
         }
     );
   }

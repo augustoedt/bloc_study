@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:bloc_study/utils/strings.dart' show enterYourPasswordHere;
+import 'package:bloc_study/screens/notes_app_screens/utils/strings.dart' show enterYourPasswordHere;
 
 class PasswordTextField extends StatelessWidget {
   final TextEditingController passwordController;

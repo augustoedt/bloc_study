@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:bloc_study/utils/strings.dart' show enterYourEmailHere;
+import 'package:bloc_study/screens/notes_app_screens/utils/strings.dart' show enterYourEmailHere;
 
 class EmailTextField extends StatelessWidget {
   final TextEditingController emailController;

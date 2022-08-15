@@ -1,4 +1,4 @@
-import 'package:bloc_study/models.dart';
+import 'package:bloc_study/screens/notes_app_screens/models.dart';
 import 'package:flutter/foundation.dart' show immutable;
 import 'package:collection/collection.dart';
 

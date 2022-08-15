@@ -1,6 +1,6 @@
 import 'package:bloc_study/dialog/generic_dialog.dart';
 import 'package:flutter/material.dart';
-import 'package:bloc_study/utils/strings.dart';
+import 'package:bloc_study/screens/notes_app_screens/utils/strings.dart';
 
 typedef OnLoginTapped = void Function(String email, String password);
 
@@ -22,7 +22,7 @@ class LoginButton extends StatelessWidget {
       onPressed: (){
         final email = emailController.text;
         final password = passwordController.text;
-        print("Email (value = $email)\nPassword (value = $password)");
+        // print("Email (value = $email)\nPassword (value = $password)");
         if(email.isEmpty || password.isEmpty){
           showGenericDialog<bool>(
               context: context,

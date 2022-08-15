@@ -1,6 +1,6 @@
-import 'package:bloc_study/components/email_text_field.dart';
-import 'package:bloc_study/components/login_button.dart';
-import 'package:bloc_study/components/password_text_field.dart';
+import 'package:bloc_study/screens/notes_app_screens/components/email_text_field.dart';
+import 'package:bloc_study/screens/notes_app_screens/components/login_button.dart';
+import 'package:bloc_study/screens/notes_app_screens/components/password_text_field.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 

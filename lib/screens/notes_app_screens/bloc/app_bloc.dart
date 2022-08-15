@@ -1,9 +1,9 @@
 import 'package:bloc/bloc.dart';
 import 'package:bloc_study/api/login_api.dart';
 import 'package:bloc_study/api/notes_api.dart';
-import 'package:bloc_study/bloc/actions.dart';
-import 'package:bloc_study/bloc/app_states.dart';
-import 'package:bloc_study/models.dart';
+import 'package:bloc_study/screens/notes_app_screens/bloc/app_states.dart';
+import 'package:bloc_study/screens/notes_app_screens/bloc/actions.dart';
+import 'package:bloc_study/screens/notes_app_screens/models.dart';
 
 class AppBloc extends Bloc<AppAction,AppState>{
   final LoginApiProtocol loginApi;
